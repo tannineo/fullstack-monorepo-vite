@@ -1,0 +1,19 @@
+{
+  "name": "fullstack-monorepo-vite",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "fullstack monorepo using vite, with pnpm / esm / typescript support",
+  "repository": {
+    "url": "https://github.com/tannineo/fullstack-monorepo-vite.git",
+    "type": "git"
+  },
+  "packageManager": "pnpm@8.6.12",
+  "workspaces": [
+    "server",
+    "app",
+    "packages/*"
+  ],
+  "scripts": {
+    "build-all": "pnpm -r build"
+  }
+}

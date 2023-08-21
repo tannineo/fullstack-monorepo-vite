@@ -1,0 +1,20 @@
+{
+  "folders": [
+    {
+      "name": "server",
+      "path": "../server"
+    },
+    {
+      "name": "app",
+      "path": "../app"
+    },
+    {
+      "name": "common",
+      "path": "../packages/common"
+    },
+    {
+      "name": "form",
+      "path": "../packages/form"
+    }
+  ]
+}
