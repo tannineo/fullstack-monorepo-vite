@@ -1,4 +1,10 @@
-import { JSXElement, children } from 'solid-js'
+import { children } from 'solid-js'
+import type { JSXElement } from 'solid-js'
+
+import sayHello from '@my/common'
+import { email } from '@my/common/schema'
+
+const helloStr = sayHello('Worldie')
 
 const TestButton = (props: { children?: JSXElement; onClick?: () => any }) => {
   const c = children(() => props.children)
@@ -9,7 +15,7 @@ const TestButton = (props: { children?: JSXElement; onClick?: () => any }) => {
       un-flex='~ row items-center justify-center'
       onClick={() => {
         console.log('button onClick event! => props: ', props)
-        alert('Hello World!')
+        alert(`${helloStr} is ${email.validate(helloStr).error ? 'not ' : ''}a email!`)
       }}
     >
       {c()}

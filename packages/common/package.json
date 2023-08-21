@@ -1,0 +1,29 @@
+{
+  "name": "@my/common",
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.mjs"
+    },
+    "./schema": {
+      "types": "./dist/schema.d.ts",
+      "default": "./dist/schema.mjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "build:watch": "tsc && vite build --watch"
+  },
+  "devDependencies": {
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.2"
+  },
+  "dependencies": {
+    "joi": "^17.9.2"
+  }
+}

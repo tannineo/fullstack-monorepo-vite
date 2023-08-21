@@ -5,7 +5,9 @@ import Fastify from 'fastify'
 import fastifyMiddie from '@fastify/middie'
 import fastifyStatic from '@fastify/static'
 import { fileURLToPath } from 'node:url'
+
 import { handler as ssrHandler } from '@my/app'
+import sayHello from '@my/common'
 
 const app = async () => {
   const app = Fastify({ logger: true })
@@ -25,7 +27,7 @@ const app = async () => {
   app.register(
     (app, _, done) => {
       app.get('/', (req, reply) => {
-        reply.send('Hey! Change me to see updates, fastify!~')
+        reply.send(sayHello('U') + ' Change me to see updates, fastify!~')
       })
 
       app.get('/ping', (req, reply) => {

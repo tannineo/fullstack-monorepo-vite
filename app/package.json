@@ -26,6 +26,7 @@
     "@astrojs/node": "^5.3.3",
     "@astrojs/solid-js": "^2.2.0",
     "@iconify-json/mdi": "^1.1.54",
+    "@my/common": "workspace:*",
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/solid": "^0.4.2",
     "@unocss/reset": "^0.55.0",
