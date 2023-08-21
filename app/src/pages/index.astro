@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import TestButton from '../components/TestButton.tsx';
+---
+
+<BaseLayout title='Home'>
+  <TestButton client:load>Hello World!</TestButton>
+</BaseLayout>

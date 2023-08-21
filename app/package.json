@@ -1,0 +1,39 @@
+{
+  "name": "@my/app",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "main": "dist/server/entry.mjs",
+  "exports": {
+    ".": "./dist/server/entry.mjs"
+  },
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0 --port 8888",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "prettier": "^3.0.1",
+    "prettier-plugin-astro": "^0.11.0"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/node": "^5.3.3",
+    "@astrojs/solid-js": "^2.2.0",
+    "@iconify-json/mdi": "^1.1.54",
+    "@nanostores/persistent": "^0.9.1",
+    "@nanostores/solid": "^0.4.2",
+    "@unocss/reset": "^0.55.0",
+    "astro": "^2.10.7",
+    "clsx": "^2.0.0",
+    "lodash": "^4.17.21",
+    "nanostores": "^0.9.3",
+    "solid-js": "^1.7.11",
+    "unocss": "^0.55.0"
+  }
+}
